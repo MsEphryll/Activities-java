@@ -5,9 +5,10 @@ public class Person {
   private double height, weight;
   private String personType;
 
-  public Person(String lname, String fname, double height, double weight) {
+  public Person(String lname, String fname, int age, double height, double weight) {
     this.lname = lname;
     this.fname = fname;
+    this.age = age
     this.height = height;
     this.weight = weight;
   }
@@ -70,7 +71,7 @@ public class Person {
 
   @Override
   public String toString() {
-    return this.getFullName() + "\n%.2f".formatted(this.getBMI());
+    return this.getFullName() + "\n%.2f".formatted(this.getBMI()) + "\n" + "Age: " + this.getAge();
   }
 
 }
