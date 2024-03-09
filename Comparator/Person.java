@@ -103,6 +103,9 @@ public class Person {
     }
   }
 
+  /**
+  * compare every person in an array
+  */
   public static class FullNameComparator implements Comparator<Person> {
 
     @Override
